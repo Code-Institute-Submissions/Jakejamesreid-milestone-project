@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:100,200,300,400,600,600,700|Merriweather:100,200,300,400,600,600,700&display=swap');
+
+/* COLOURS */
+
+
+
+/* Body */
+.hero-section{
+    /* Reference https://codetheweb.blog/2017/12/07/fullscreen-image-hero/ */
+
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    /* Background styles */
+    background: url("../images/apply-slide_get-it-back.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.section{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gap100{
+    padding: 70px 0px;
+}
+
+.h3w{
+    color: white;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.dropdown-item {
+    font-weight: regular;
+    color: #777;
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    width: 280px;
+}
+
+.nabvar-width{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.navbar-logo{
+    display: inline-block;
+}
+
+.navbar-menu{
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+}
+
+/* About */
+.about-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+}
+
+.blurb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    
+}
+.blurb .blurb-image{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    vertical-align: bottom;
+}
+
+.blurb .blurb-text{
+    display: inline-block;
+    width: 70%;
+
+}
+
+/* SERVICES */
+.services-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.refunds{
+    width: 50%;
+}
+
+/* PROCESS  */
+.process-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step_1{
+    width: 200px;
+    height: 600px;
+    background-color: black;
+}
+
+.step_2{
+    width: 200px;
+    height: 600px;
+    background-color: yellow;
+}
+
+.step_3{
+    width: 200px;
+    height: 600px;
+    background-color: red;
+}
+
+#blurb{
+    background-image: linear-gradient(#181174,#731397);
+}
+
+.blb{
+    padding: 25px;
+}
+
+.blb i {
+    font-size: 60px;
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#step_3{
+    padding: 50px 61.25px;
+}
+
+.blp{
+    min-height: 25px;
+}
+
+#blurb_button{
+    width: 50%;
+}
+/* CONTACT FORM */
+
+
+/* MEDIA QUERIES */
