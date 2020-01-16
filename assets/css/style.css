@@ -185,7 +185,14 @@
 #blurb_button{
     width: 50%;
 }
-/* CONTACT FORM */
 
+/* FOOTER */
+.footer_hyperlink a{
+    color: inherit;
+}
+
+.footer_hyperlink a:hover{
+    color: black;
+}
 
 /* MEDIA QUERIES */
