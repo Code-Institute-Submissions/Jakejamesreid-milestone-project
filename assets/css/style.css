@@ -28,13 +28,6 @@
     background-attachment: fixed;
 
 }
-.section{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .gap100{
     padding: 70px 0px;
@@ -102,25 +95,11 @@
     text-align: center;
 }
 
-.blurb {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    
-}
-.blurb .blurb-image{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin-right: 50px;
-    vertical-align: bottom;
-}
-
-.blurb .blurb-text{
-    display: inline-block;
-    width: 70%;
-
+.card img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    align-items: center;
 }
 
 /* SERVICES */
@@ -187,6 +166,11 @@
 }
 
 /* FOOTER */
+
+footer{
+    background-color: #ECEEF6;
+}
+
 .footer_hyperlink a{
     color: inherit;
 }
