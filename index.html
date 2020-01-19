@@ -62,39 +62,182 @@
     <!-- Hero -->
     <section>
         <div class="hero-section">
+            <div class="overlay"></div>
+
+            <div class="row container col-md-offset-5">
+
+                <div class="col-md-6 col-md-offset-5 text-white">
+                    <h1 style="font-size: 50px">AllTaxBack</h1>
+                    <h2 class="mb-4" style="font-size: 40px">Get it all back</h2>
+                    <!-- https://www.irishtaxrebates.ie/ -->
+                    <p class="text-justify" style="font-size: 20px">Thousands of Irish citizens are due a tax rebate, yet every year millions of euros go unclaimed.​ In fact, 
+                        the average rebate we secure for clients is €1,057. So, how do you overpay tax?​ You might be eligible 
+                        for tax relief on medical expenses, or employment expenses such as uniforms.​ Or maybe you’re married 
+                        and entitled to more tax credits, or a PAYE worker who has paid too much income tax.​ Whatever it is, 
+                        we use our specialist tax expertise to secure you the highest possible tax rebate.​ Just complete our 
+                        form and we’ll get to work; you simply relax and wait for a cheque in the post.</p>
+
+                </div>
+
+                <!-- Tax Form -->
+                <div class="border rounded mb-4 px-0 py-4 col-md-6 col-md-offset-5" style="background-color: #ECEEF6">
+
+                    <!-- Form heading -->
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Application Form</h2>
+
+                    <div class="row justify-content-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form">
+
+                                <!-- FName, LName, DOB, PPSN -->
+                                <div class="row">
+
+                                    <!-- FName -->
+                                    <div class="col-md-6">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <!-- /FName -->
+
+                                    <!-- LName -->
+                                    <div class="col-md-6">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="lname" name="lname" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <!-- /LName -->
+
+                                    <!-- DOB -->
+                                    <div class="col-md-6">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="dob" name="dob" class="form-control" placeholder="DOB">
+                                        </div>
+                                    </div>
+                                    <!-- /DOB -->
+
+                                    <!-- PPSN -->
+                                    <div class="col-md-6">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="PPSN" name="PPSN" class="form-control" placeholder="PPSN">
+                                        </div>
+                                    </div>
+                                    <!-- /PPSN -->
+
+                                </div>
+                                <!-- /FName, LName, DOB, PPSN -->
+
+                                <!-- Email, Number, Signature, Terms-->
+                                <div class="row">
+
+                                    <!-- Email -->
+                                    <div class="col-md-12">
+                                        <div class="md-form my-2">
+                                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <!-- /Email -->
+
+                                    <!-- Number -->
+                                    <div class="col-md-12">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="number" name="number" class="form-control" placeholder="Number">
+                                        </div>
+                                    </div>
+                                    <!-- /Number-->     
+
+                                    <!-- Signature -->
+                                    <div class="col-md-12">
+                                        <div class="md-form my-2">
+                                            <input type="text" id="signature" name="signature" class="form-control" placeholder="Signature">
+                                        </div>
+                                    </div>
+                                    <!-- /Signature-->
+                                    
+                                    <!-- terms -->
+                                    <div class="form-check col-md-12 my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            I have read and agree to the Terms & Conditions
+                                        </label>
+                                    </div>
+                                    <!-- terms -->
+                                </div>
+                                <!-- /Email, Number, Signature, Terms-->
+                            </form>
+
+                            <!-- legal, button -->
+                            <div class="row">
+
+                                <!-- legal -->
+                                <div class="col-md-8 text-justify my-2">
+                                    <small class="text-muted">By clicking Sign, I confirm that this e-signature can be used 
+                                        on legal documents.</small>
+                                </div>
+                                <!-- /legal -->
+
+                                <!-- button -->
+                                <div class="text-center text-white text-md-left col-md-4 my-2">
+                                    <a class="btn btn-primary px-5 py-2"
+                                        onclick="document.getElementById('contact-form').submit();">Sign</a>
+                                </div>
+                                <!-- /button -->
+
+                            </div>
+                            <!-- /legal, button -->
+
+                        </div>
+                        <!--Grid column-->
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- https://www.irishtaxrebates.ie/img/xmedical-page-shield.png.pagespeed.ic.1SEPf6KXtf.webp -->
+            <img class="accreditation" src="assets/images/tax-agent-number.webp" alt="">
 
         </div>
     </section>
-    
+
     <!-- About https://getbootstrap.com/docs/4.0/components/card/-->
     <section>
         <div class="px-5 py-5" style="background-color: #ECEEF6">
             <div class="container text-center">
-                
+
                 <h2>About AllTaxBack</h2>
 
                 <div class="bg-white px-3 py-3 mt-4">
                     <div class="card-group border">
                         <div class="card">
-                            <img class="card-img-top mx-auto mt-4" src="assets/images/working-from-home-businessman-checking-on-returns.jpg" alt="Card image cap">
+                            <img class="card-img-top mx-auto mt-4"
+                                src="assets/images/working-from-home-businessman-checking-on-returns.jpg"
+                                alt="Card image cap">
                             <div class="card-body">
-                            <h3 class="card-title">Officially Authorized Tax Agent</h3>
-                            <p class="card-text mx-5">Taxes can be a dauntng task for anyone to complete. There is a lot of confusing terminology
-                                and it is hard to know what you are entitled to claim. I am an oficially authorised tax agaent and I know all the tricks in the
-                                books for reclaiming as much of your money as possible!
-                            </p>
-                            <p class="card-text"><small class="text-muted" style="color: #007EE5">AllTaxBack</small></p>
+                                <h3 class="card-title">Officially Authorized Tax Agent</h3>
+                                <p class="card-text mx-5">Taxes can be a dauntng task for anyone to complete. There is a
+                                    lot of confusing terminology
+                                    and it is hard to know what you are entitled to claim. I am an oficially authorised
+                                    tax agaent and I know all the tricks in the
+                                    books for reclaiming as much of your money as possible!
+                                </p>
+                                <p class="card-text"><small class="text-muted" style="color: #007EE5">AllTaxBack</small>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Services -->
-    <section>
-        <div class="section">
-            <div class="col-md-12 section-column">
+    <section style="background-color: #ECEEF6;">
+        <div class="container py-5">
+            <div class="col-md-12">
                 <h2 class="services-heading">Tax Refunds</h2>
                 <p>There are many types of tax refunds, below is a list of the most common tax refunds.</p>
 
@@ -208,7 +351,7 @@
                     <!-- Content -->
                     <h6 class="text-uppercase font-weight-bold">All Tax Back</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>We specialize in getting all of your tax back. 
+                    <p>We specialize in getting all of your tax back.
                         We know all the tricks in the books to getting as much tax back as possible.
                     </p>
 
