@@ -30,15 +30,6 @@
 
 }
 
-.row.gutter-10 {
-    margin-left: -5px;
-    margin-right: -5px;
-    [class*="col-"] {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
-
 .accreditation{
     position: absolute;
     bottom: 5%;
@@ -57,10 +48,6 @@
 
 .gap100{
     padding: 70px 0px;
-}
-
-.h3w{
-    color: white;
 }
 
 /* Navbar */
@@ -138,33 +125,136 @@
     width: 50%;
 }
 
+.service-blurb{
+    border: 2px solid #000;
+
+}
+
+.service-blurb i {
+    border: 2px solid #000;
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+/* Reference https://bbbootstrap.com/snippets/our-service-section-font-awesome-icons-49354397 */
+.section-title {
+    margin-bottom: 38px
+}
+
+.shadow,
+.subscription-wrapper {
+    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important
+}
+
+.icon-primary {
+    color: #062caf
+}
+
+.icon-bg-circle {
+    position: relative
+}
+
+.icon-lg {
+    font-size: 50px
+}
+
+.icon-bg-circle::before {
+    z-index: 1;
+    position: relative
+}
+
+.icon-bg-primary::after {
+    background: #062caf !important
+}
+
+.icon-bg-circle::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: -35px;
+    left: 15px;
+    border-radius: 50%;
+    background: inherit;
+    opacity: .1
+}
+
+p,
+.paragraph {
+    font-weight: 400;
+    color: #8b8e93;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif
+}
+
+.icon-bg-yellow::after {
+    background: #f6a622 !important
+}
+
+.icon-bg-purple::after {
+    background: #7952f5
+}
+
+.icon-yellow {
+    color: #f6a622
+}
+
+.icon-purple {
+    color: #7952f5
+}
+
+.icon-cyan {
+    color: #02d0a1
+}
+
+.icon-bg-cyan::after {
+    background: #02d0a1
+}
+
+.icon-bg-red::after {
+    background: #ff4949
+}
+
+.icon-red {
+    color: #ff4949
+}
+
+.icon-bg-green::after {
+    background: #66cc33
+}
+
+.icon-green {
+    color: #66cc33
+}
+
+.icon-bg-orange::after {
+    background: #ff7c17
+}
+
+.icon-orange {
+    color: #ff7c17
+}
+
+.icon-bg-blue::after {
+    background: #3682ff
+}
+
+.icon-blue {
+    color: #3682ff
+}
+
 /* PROCESS  */
 .process-heading{
     font-family: "Lora", sans-serif;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.step_1{
-    width: 200px;
-    height: 600px;
-    background-color: black;
-}
-
-.step_2{
-    width: 200px;
-    height: 600px;
-    background-color: yellow;
-}
-
-.step_3{
-    width: 200px;
-    height: 600px;
-    background-color: red;
-}
-
-#blurb{
-    background-image: linear-gradient(#181174,#731397);
 }
 
 .blb{
@@ -174,13 +264,18 @@
 .blb i {
     font-size: 60px;
     padding: 50px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 50%;
     margin-bottom: 25px;
 }
 
+
 #step_3{
-    padding: 50px 61.25px;
+    font-size: 60px;
+    padding: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-bottom: 25px;
 }
 
 .blp{
@@ -188,7 +283,12 @@
 }
 
 #blurb_button{
-    width: 50%;
+    width: 10%;
+}
+
+/* GUARANTEE */
+#guarantee_button{
+    width: 12%;
 }
 
 /* FOOTER */
