@@ -1,8 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:100,200,300,400,600,600,700|Merriweather:100,200,300,400,600,600,700&display=swap');
 
+/* GENERAL */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
+P {
+    font-family: 'Merriweather', sans-serif!important;
+}
 
-/* Navbar */
+h1, h2, h3, h4, h5{
+    font-family: 'Lora', sans-serif!important;
+}
+
+.page-heading{
+    font-size: 50px;
+    text-align: center;
+}
+
+.sctn-colour-white{
+    background-color: #fff;
+}
+
+.sctn-colour-gray{
+    background-color: #ECEEF6;
+}
+
+.blue-bg{
+    background-color: #007EE5;
+}
+
+.width-60{
+    width: 60%;
+}
+
+.blue-font{
+    color: #007EE5;
+}
+
+li{
+    color: #8b8e93;
+}
+
+@media (max-width: 992px) { 
+    .center-align-text-xs-md{
+        text-align: center;
+    }
+}
+
+/* NAVBAR */
 
 .navalert-container {
     position: absolute;
@@ -44,6 +91,15 @@
     position: relative;
 }
 
+@media only screen and (max-width: 600px){
+.nabvar-width{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+}
 .navbar-logo{
     display: inline-block;
 }
@@ -53,7 +109,6 @@
     position: absolute;
     right: 0%;
 }
-
 
 /* HERO SECTION */
 .hero-section{
@@ -73,12 +128,20 @@
     text-align: center;
 
     /* Background styles */
-    background: url("../images/luxury-home-with-swimming-pool-PGVBB3J.jpg");
+    background: url("../images/startup_t20_JYgL6O.jpg"); /* Reference https://www.twenty20.com/photos/8d981427-fd82-49c7-b371-06f2357ca926 */
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+.logo{
+    font-size: 60px;
+    text-align: center;
+}
+
+.tagline{
+    font-size: 40px;
 }
 
 .accreditation{
@@ -127,8 +190,6 @@
 
     }
 }
-
-
 
 /* About */
 .about-heading{
@@ -202,7 +263,7 @@
     position: absolute;
     width: 68px;
     height: 68px;
-    top: -35px;
+    bottom: 35px;
     left: 15px;
     border-radius: 50%;
     background: inherit;
@@ -210,9 +271,13 @@
 }
 
 @media only screen and (max-width: 1000px){
+    .icon-blue {
+        text-align: center;
+        display: block;
+    }
+
     .icon-bg-circle::after {
-        left: 0%;
-        right: 0%;
+        left: 45%;
     }
 }
 
@@ -275,7 +340,6 @@ p,
 }
 
 /* FOOTER */
-
 footer{
     background-color: #ECEEF6;
 }
@@ -291,11 +355,41 @@ footer{
 /***** Tax Refunds Page ******/
 
 /* Header */
-.Header{
+.header-rent-relief{
     position: relative;
 
     /* Background styles */
-    background: url("../images/luxury-home-with-swimming-pool-PGVBB3J.jpg");
+    background: url("../images/luxury-australia-living-room-design-lounge-interiors-interiordesign_t20_LAd9Yn.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reference https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/ */
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+/***** Contact Page ******/
+
+/* Header */
+.header-contact{
+    position: relative;
+
+    /* Background styles */
+    background: url("../images/at-sign_t20_6mmVnv.jpg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -318,9 +412,18 @@ footer{
     background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 
-/***** Contact Page ******/
-
 /* Form */
-.form-control{
-    background-color: rgba(0,0,0,.6);
+.contact-form{
+    background-color: rgba(0,0,0,.2);
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:2%;
+    height: 500px;
+}
+
+.map-container iframe{
+    height:100%;
+    width:100%;
 }
